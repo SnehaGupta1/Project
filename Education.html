@@ -13,6 +13,9 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
     <!-- custom css file -->
     <link rel="stylesheet" href="style.css" />
 
@@ -39,160 +42,114 @@
 </head>
 
 <body>
-   <!-- navbar starts -->
-   <nav
-   id="navbar-top"
-   class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
- >
-   <div class="container-fluid px-5">
-     <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d"
-       >Portfolio</a
-     >
-     <button
-       class="nav-menu d-md-none"
-       type="button"
-       data-bs-toggle="collapse"
-       data-bs-target="#navbarNav"
-     >
-       <i class="bi bi-menu-button-fill"></i>
-     </button>
-     <div
-       class="collapse navbar-collapse justify-content-center"
-       id="navbarNav"
-     >
-       <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
-         <li class="nav-item">
-           <a class="nav-link" aria-current="page" href="index.html">Home</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="About.html">About</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="Education.html">Education</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#Projects">Projects</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#Skills">Skills</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#Training and Workshops">Training and Workshops</a>
-         </li>
-         <li class="nav-item">
-             <a class="nav-link" href="Contacts.html">Contacts</a>
-         </li>
-       </ul>
-     </div>
-     <button class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">Contact</button>
-   </div>
- </nav>
- <!-- navbar ends here -->
+ <!-- navbar starts -->
+ 
+ <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <div class="container-fluid px-5">
+    <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">𝕾𝖓𝖊𝖍𝖆 𝕲𝖚𝖕𝖙𝖆</a>
+    <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <i class="bi bi-menu-button-fill"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav gap-3" style="font-size: 1.1rem">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="About.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Education.html">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Skills.html">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Training and Workshops.html">Training & Workshops</a>
+        </li>
+      </ul>
+    </div>
+    <button onclick="window.location.href='Contacts.html';"
+      class="c-btn h-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block">
+      Contact
+    </button>
+  </div>
+</nav>
+<!-- navbar ends here -->
 
-        <!-- skill section starts -->
-        <section class="skill mt-5 py-5" id="about">
-            <div class="row justify-content-evenly">
-              <div class="col-10 col-md-5 skill-with-progress" >
-                <div class="row justify-content-evenly">
-                  <div class="col-10 col-md-6">
-                    <div class="progress-card ms-3 ms-md-0">
-                      <div class="circular-progress html-css">
-                        <span class="progress-value html-progress">0%</span>
-                      </div>
-                      <br />
-                      <span class="text">HTML & CSS</span>
-                    </div>
-                  </div>
-                  <div class="col-10 col-md-6 mt-4 mt-md-0">
-                    <div class="progress-card ms-3 ms-md-0">
-                      <div class="circular-progress javascript">
-                        <span class="progress-value javascript-progress">0%</span>
-                      </div>
-                      <br />
-                      <span class="text">JavaScript</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row justify-content-evenly mt-4">
-                  <div class="col-10 col-md-6">
-                    <div class="progress-card ms-3 ms-md-0">
-                      <div class="circular-progress php">
-                        <span class="progress-value php-progress">0%</span>
-                      </div>
-                      <br />
-                      <span class="text">PHP</span>
-                    </div>
-                  </div>
-                  <div class="col-10 col-md-6 mt-4 mt-md-0">
-                    <div class="progress-card ms-3  ms-md-0">
-                      <div class="circular-progress reactjs">
-                        <span class="progress-value reactjs-progress">0%</span>
-                      </div>
-                      <br>
-                      <span class="text">ReactJS</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
-                <div class="heading mt-5 mt-md-3">
-                  <small>My Skills</small>
-                  <h3>Beautiful & Unique Digital Experiences</h3>
-                  <p class="text-muted">
-                    Nostrum exercitationem ullam corporis suscipit laborioa nisi ut
-                    aliquid exrea commodi consequatur magni dolores aos qui ratione
-                    voluptatem nesciunt.
-                  </p>
-                  <p class="text-muted">
-                    Quia voluptas sit aspernatur aut odit aut fugit, sed ruiano
-                    consequntar magni dolores.
-                  </p>
-                  <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
-                    <!-- here download attribute is used for adding download functionality to button  -->
-                    <a
-                      href="Entry Level Web Developer Resume.pdf"
-                      download="SampleCV"
-                      style="text-decoration: none;color: #fff;"
-                      >Download CV</a
-                    >
-                  </button>
-                </div>
-              </div>
-            </div>
-          </section>
+  <!-- education section starts -->
+<section class="education mt-5 py-5" id="education">
 
-             <!-- footer section starts  -->
-    <footer class="text-center text-muted py-4">
-        <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
-        <div class="link-group mt-5" data-aos="fade-up">
-          <a href="index.html">Home</a>
-          <div class="vr"></div>
-          <a href="About.html">About</a>
-          <div class="vr"></div>
-          <a href="Education.html">Education</a>
-          <div class="vr"></div>
-          <a href="Skills.html">Skills</a>
-          <div class="vr"></div>
-          <a href="Projects.html">Projects</a>
-          <div class="vr"></div>
-          <a href="Contacts.html">Contact</a>
+  <h2 class="heading"><i class="fa fa-graduation-cap"></i> My <span>Education</span></h2>
+
+    <p class="qoute">“Education is the passport to the future, for tomorrow belongs to those who prepare for it today.” —Malcolm X. </p>
+
+    <div class="box-container " data-aos="slide-left">
+
+    <div class="box">
+        <div class="image  mt-5 mt-md-3">
+        <img draggable="false" src="educat/ramniranjan-jhunjhunwala-college-mumbai-suburban-ramniranjan-jhunjhunwala-college-002.jpg" alt="">
         </div>
-        <div class="social-links mt-5" data-aos="fade-up">
-          <button href="" class="rounded-pill dribble">
-            <i class="bi bi-dribbble"></i>
-          </button>
-          <button href="" class="rounded-pill whatsapp">
-            <i class="bi bi-whatsapp"></i>
-          </button>
-          <button href="" class="rounded-pill behance">
-            <i class="bi bi-behance"></i>
-          </button>
+        <div class="content">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>Ramniranjan Jhunjhunwala College Of Arts, Science and Commerce | Mumbai University</p>
+        <h4>2021-2024 | Pursuing</h4>
         </div>
-        <hr class="text-muted my-4" />
-  
-        <p>Copyright 2022 Portfolio | All Rights Reserved.</p>
-      </footer>
-      <!-- footer section ends here -->
+    </div>
+
+    <div class="box">
+      <div class="image">
+      <img draggable="false" src="educat/KhalsaCLg.jfif" alt="">
+      </div>
+      <div class="content">
+      <h3>HSC Science </h3>
+      <p>Guru Nanak Khalsa College Of Arts, Science and Commerce | Maharashtra Board</p>
+      <h4>2019-2021 | Completed</h4>
+      </div>
+    </div>
+
+</div>
+</section>
+<!-- education section ends -->
+
+ <!-- footer section starts  -->
+ <footer class="text-center text-muted py-4">
+  <h3 class="text-white pt-4" data-aos="fade-up">Thankyou for visiting my portfolio website!</h3>
+  <div class="link-group mt-5" data-aos="fade-up">
+    <a href="index.html">Home</a>
+    <div class="vr"></div>
+    <a href="About.html">About</a>
+    <div class="vr"></div>
+    <a href="Education.html">Education</a>    
+    <div class="vr"></div>
+    <a href="Projects.html">Projects</a>
+    <div class="vr"></div>
+    <a href="Skills.html">Skills</a>
+    <div class="vr"></div>      
+    <a href="Training and Workshops.html">Training & Workshops</a>
+    <div class="vr"></div>
+    <a href="Contacts.html">Contact</a>
+  </div>
+  <div class="social-links mt-5" data-aos="fade-up">
+    <button onclick="window.location.href='https://www.linkedin.com/in/sneha-gupta1234';" target="_blank" class="rounded-pill linkedin">
+      <i class="fa fa-linkedin"></i>
+    </button>
+    <button onclick="window.location.href='https://github.com/SnehaGupta1/';" class="rounded-pill github">
+      <i class="fa fa-github"></i>
+    </button>
+    <button onclick="window.location.href='mailto: snehag0203gmail.com';" class="rounded-pill envelope">
+      <i class="fa fa-envelope"></i>
+    </button>
+  </div>
+  <hr class="text-muted my-4" />
+
+  <p>Copyright 2023 Portfolio | All Rights Reserved.</p>
+</footer>
+<!-- footer section ends here -->
+
   
         <!-- bootstrap javascript cdn link  -->
       <script
